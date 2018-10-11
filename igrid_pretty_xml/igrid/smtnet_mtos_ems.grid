@@ -1,0 +1,167 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<GridDisplayDefinition>
+  <GridName />
+  <RootTableName>SMTNET_MTOS</RootTableName>
+  <DataMap xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns='http://www.areva.com/DataBindingMap2.xsd'>
+    <DataBinding>
+      <WebFgQuery>
+        <Name>smtnet_mtos</Name>
+        <ReadWrite>ReadWrite</ReadWrite>
+        <GroupingEnabled>false</GroupingEnabled>
+        <Query>
+            &lt;?xml version="1.0" encoding="utf-8"?&gt;
+            &lt;qns:repeatQuery guid="20f7069e-90f0-4a65-9cd5-b8e1353a015c" refresh="3" drivingRec="app[@name='SMTNET']/db[@name='SMTNET']/rec[@name='MTOS']" xmlns:qns="uuid:14F5F723-831B-46c8-AF5F-0E0D69315B6F"&gt;
+                &lt;app name="SMTNET"&gt;
+                    &lt;db name="SMTNET"&gt;
+                        &lt;rec name="MTOS"&gt;
+                            &lt;fld name="OUTAGEID"     key="0"         /&gt;
+                            &lt;fld name="EQUIPTYP"                     /&gt;
+                            &lt;fld name="CO"                           /&gt;
+                            &lt;fld name="EQUIPID"                      /&gt;
+                            &lt;fld name="MDBNAME"                      /&gt;
+                            &lt;fld name="ST"                           /&gt;
+                            &lt;fld name="ZST"                          /&gt;
+                            &lt;fld name="DERATE"                       /&gt;
+                            &lt;fld name="DISABLE"                      /&gt;
+                            &lt;fld name="RESTORE"      dateFmt="Full"  /&gt;
+                            &lt;fld name="START"        dateFmt="Full"  /&gt;
+                            &lt;fld name="END"          dateFmt="Full"  /&gt;
+                        &lt;/rec&gt;
+                    &lt;/db&gt;
+                &lt;/app&gt;
+                &lt;recGroup name="MTOS"&gt;
+                    &lt;recGroupPart rec="app[@name='SMTNET']/db[@name='SMTNET']/rec[@name='MTOS']" /&gt;
+                &lt;/recGroup&gt;
+            &lt;/qns:repeatQuery&gt;
+            &lt;!-- family=EMS --&gt;
+        </Query>
+        <DataEntryApplication />
+        <AppDependent AppType='DISAPP' />
+      </WebFgQuery>
+    </DataBinding>
+  </DataMap>
+  <GridProperties xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+    <BackColor>Window</BackColor>
+    <GridTextAlign>MiddleCenter</GridTextAlign>
+    <ChangedCellColor>Aqua</ChangedCellColor>
+    <GridTitleForeColor>Black</GridTitleForeColor>
+    <GridTitleBackColor />
+    <ForeColor>ControlText</ForeColor>
+    <TitleBarHeight>0</TitleBarHeight>
+    <TitleFont>Microsoft Sans Serif, 8.25pt</TitleFont>
+    <Font>Microsoft Sans Serif, 8.25pt</Font>
+  </GridProperties>
+  <GridSchema>
+        <GridEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <MaxNestedFieldRecurseLevel>3</MaxNestedFieldRecurseLevel>
+        <MaxNestedCollectionRecurseLevel>5</MaxNestedCollectionRecurseLevel>
+            <TableDescriptor>
+                <Name>MTOS</Name>
+                <GroupedColumns />
+                <SortedColumns />
+                <VisibleColumns>
+                    <GridVisibleColumnDescriptor>
+                        <Name>OUTAGEID</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>CO</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>EQUIPTYP</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>EQUIPID</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>MDBNAME</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>ST</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>ZST</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>DERATE</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>DISABLE</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>RESTORE</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>START</Name>
+                    </GridVisibleColumnDescriptor>
+                    <GridVisibleColumnDescriptor>
+                        <Name>END</Name>
+                    </GridVisibleColumnDescriptor>
+                </VisibleColumns>
+                <Columns>
+                    <GridColumnDescriptor>
+                        <Name>OUTAGEID</Name>
+                        <MappingName>OUTAGEID</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>EQUIPTYP</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>CO</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>EQUIPID</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>MDBNAME</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>ST</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>ZST</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>DERATE</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>DISABLE</MappingName>
+                        <AllowDropDownCell>false</AllowDropDownCell>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>RESTORE</MappingName>
+                        <AllowDropDownCell>false</AllowDropDownCell>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>START</MappingName>
+                    </GridColumnDescriptor>
+                    <GridColumnDescriptor>
+                        <MappingName>END</MappingName>
+                    </GridColumnDescriptor>
+                </Columns>
+                <Appearance>
+                    <AnyRecordFieldCell />
+                    <FilterBarCell>
+                        <CellType>"CustomFilterBarCell"</CellType>
+                    </FilterBarCell>
+                </Appearance>
+            </TableDescriptor>
+        </GridEngine>
+    </GridSchema>
+    <Charts>
+    </Charts>
+    <Layout xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+        <Type xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Grid</Type>
+        <SplitterHeight xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>100</SplitterHeight>
+        <SplitterWidth xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>200</SplitterWidth>
+        <GridDocking xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Fill</GridDocking>
+    </Layout>
+    <UserData>
+        <XmlSerializableStringDictionary xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+            <Entries />
+        </XmlSerializableStringDictionary>
+    </UserData>
+    <WebfgMenus>
+        <DisplayMenus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xsi:nil='true' />
+    </WebfgMenus>
+    <ColumnCellFormats />
+</GridDisplayDefinition>

@@ -1,0 +1,83 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<GridDisplayDefinition>
+  <GridName />
+  <RootTableName>smtnet_fgtn</RootTableName>
+  <DataMap xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://www.areva.com/DataBindingMap2.xsd'>
+    <DataBinding>
+      <WebFgQuery>
+        <Name>smtnet_flstn</Name>
+        <ReadWrite>ReadOnly</ReadWrite>
+        <GroupingEnabled>false</GroupingEnabled>
+        <Query>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;qns:repeatQuery guid="3aef70a8-0188-42ea-8ed3-6d0bde7a9f7e" refresh="3" drivingRec="app[@name='SMTNET']/db[@name='NETMOM']/rec[@name='FLSTN']" xmlns:qns="uuid:14F5F723-831B-46c8-AF5F-0E0D69315B6F"&gt;
+  &lt;app name="SMTNET"&gt;
+    &lt;db name="NETMOM"&gt;
+      &lt;rec name="FLSTN"&gt;
+        &lt;fld name="BRIND" /&gt;
+        &lt;fld name="BRTYP" /&gt;
+        &lt;fld name="ID1" /&gt;
+        &lt;fld name="ID2" /&gt;
+        &lt;fld name="IDLIM" /&gt;
+        &lt;fld name="MAXLIM" /&gt;
+        &lt;fld name="ST" /&gt;
+        &lt;fld name="TOIND" /&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="CA" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="CTGFLOW" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="CTGID" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="CURFLOW" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="FLOWVIOL" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="ID" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="MAXMWF" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="NERCID" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="PCTGFLOW" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="SC" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="TP" /&gt;
+        &lt;/fld&gt;
+        &lt;fld name="L__FGTN"&gt;
+          &lt;indFld name="VALID" /&gt;
+        &lt;/fld&gt;
+      &lt;/rec&gt;
+    &lt;/db&gt;
+  &lt;/app&gt;
+  &lt;recGroup name="FLSTN"&gt;
+    &lt;recGroupPart rec="app[@name='SMTNET']/db[@name='NETMOM']/rec[@name='FLSTN']" /&gt;
+  &lt;/recGroup&gt;
+&lt;/qns:repeatQuery&gt;
+
+&lt;!-- family=EMS --&gt;
+</Query>
+        <DataEntryApplication />
+      </WebFgQuery>
+    </DataBinding>
+  </DataMap>
+  <GridProperties xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    <BackColor>Window</BackColor>
+    <ChangedCellColor>Pink</ChangedCellColor>
+    <ForeColor>ControlText</ForeColor>
+    <ShowGroupDropArea>true</ShowGroupDropArea>
+  </GridProperties>
+  <GridSchema><GridEngine xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><TableDescriptor><Name>Flowgate Data</Name><GroupedColumns /><PrimaryKeyColumns /><AllowNew>false</AllowNew><AllowRemove>false</AllowRemove><AllowEdit>false</AllowEdit><VisibleColumns><GridVisibleColumnDescriptor><Name>L__FGTN&gt;ID</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;NERCID</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;MAXMWF</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;CA</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>ST</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>BRTYP</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>ID1</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>ID2</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>MAXLIM</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;CTGID</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;CTGFLOW</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;CURFLOW</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;FLOWVIOL</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;PCTGFLOW</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;SC</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;TP</Name></GridVisibleColumnDescriptor><GridVisibleColumnDescriptor><Name>L__FGTN&gt;VALID</Name></GridVisibleColumnDescriptor></VisibleColumns><Columns><GridColumnDescriptor><Width>65</Width><MappingName>BRIND</MappingName></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Branch Type</HeaderText><Width>44</Width><MappingName>BRTYP</MappingName></GridColumnDescriptor><GridColumnDescriptor><Width>118</Width><MappingName>ID1</MappingName></GridColumnDescriptor><GridColumnDescriptor><Width>65</Width><MappingName>ID2</MappingName></GridColumnDescriptor><GridColumnDescriptor><Width>65</Width><MappingName>IDLIM</MappingName></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Max Limit</HeaderText><Width>49</Width><MappingName>MAXLIM</MappingName><Appearance><AnyRecordFieldCell><Format>"f2"</Format></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Station</HeaderText><Width>74</Width><MappingName>ST</MappingName></GridColumnDescriptor><GridColumnDescriptor><Width>65</Width><MappingName>TOIND</MappingName><AllowDropDownCell>false</AllowDropDownCell></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Control Area</HeaderText><Width>94</Width><MappingName>L__FGTN&gt;CA</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>CTG Flow</HeaderText><Width>52</Width><MappingName>L__FGTN&gt;CTGFLOW</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType><Format>"f2"</Format></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>CTG Id</HeaderText><Width>60</Width><MappingName>L__FGTN&gt;CTGID</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Current Flow</HeaderText><Width>50</Width><MappingName>L__FGTN&gt;CURFLOW</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType><Format>"f2"</Format></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Flow Violation?</HeaderText><Width>59</Width><MappingName>L__FGTN&gt;FLOWVIOL</MappingName><AllowDropDownCell>false</AllowDropDownCell><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Flowgate Id</HeaderText><Width>262</Width><MappingName>L__FGTN&gt;ID</MappingName><AllowFilter>true</AllowFilter><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>FGT Max MW limit</HeaderText><Width>55</Width><MappingName>L__FGTN&gt;MAXMWF</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType><Format>"f2"</Format></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>NERC Id</HeaderText><Width>50</Width><MappingName>L__FGTN&gt;NERCID</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Post CTG flow</HeaderText><Width>58</Width><MappingName>L__FGTN&gt;PCTGFLOW</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType><Format>"f2"</Format></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Security Coordinator</HeaderText><Width>74</Width><MappingName>L__FGTN&gt;SC</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Transmission provider</HeaderText><Width>113</Width><MappingName>L__FGTN&gt;TP</MappingName><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor><GridColumnDescriptor><HeaderText>Valid?</HeaderText><Width>54</Width><MappingName>L__FGTN&gt;VALID</MappingName><AllowDropDownCell>false</AllowDropDownCell><Appearance><AnyRecordFieldCell><CellType>"Static"</CellType></AnyRecordFieldCell></Appearance></GridColumnDescriptor></Columns><Appearance><FilterBarCell><CellType>"CustomFilterBarCell"</CellType></FilterBarCell></Appearance><TopLevelGroupOptions><ShowFilterBar>true</ShowFilterBar></TopLevelGroupOptions><TableOptions><ColumnHeaderRowHeight>31</ColumnHeaderRowHeight></TableOptions></TableDescriptor><NestedTableGroupOptions><ShowFilterBar>true</ShowFilterBar></NestedTableGroupOptions><TableOptions><AllowSelection><GridSelectionFlags>Any</GridSelectionFlags></AllowSelection></TableOptions></GridEngine></GridSchema>
+<Charts>
+</Charts>
+<Layout xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'><Type xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Grid</Type><SplitterHeight xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>100</SplitterHeight><SplitterWidth xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>200</SplitterWidth><GridDocking xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Fill</GridDocking></Layout><UserData><XmlSerializableStringDictionary xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'><Entries /></XmlSerializableStringDictionary></UserData></GridDisplayDefinition>

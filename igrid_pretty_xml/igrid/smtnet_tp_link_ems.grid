@@ -1,0 +1,37 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<GridDisplayDefinition>
+  <GridName>smtnet_tp_link</GridName>
+  <RootTableName />
+  <DataMap xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns='http://www.areva.com/DataBindingMap2.xsd'>
+    <DataBinding>
+      <WebFgQuery>
+        <Name>WebFG</Name>
+        <ReadWrite>ReadOnly</ReadWrite>
+        <GroupingEnabled>false</GroupingEnabled>
+        <Query>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;qns:repeatQuery guid="35630a91-07ed-4fd4-9ea0-3164ec01df60" refresh="3" drivingRec="app[@name='SMTNET']/db[@name='SMTNET']/rec[@name='TPNT']" xmlns:qns="uuid:14F5F723-831B-46c8-AF5F-0E0D69315B6F"&gt;&lt;app name="SMTNET"&gt;&lt;db name="SMTNET"&gt;&lt;rec name="TPNT"&gt;&lt;fld name="__" fldType="sub" /&gt;&lt;fld name="TIME" dateFmt="Full" /&gt;&lt;/rec&gt;&lt;/db&gt;&lt;/app&gt;&lt;recGroup name="TPNT"&gt;&lt;recGroupPart rec="app[@name='SMTNET']/db[@name='SMTNET']/rec[@name='TPNT']" /&gt;&lt;/recGroup&gt;&lt;/qns:repeatQuery&gt;&lt;!-- family=EMS--&gt;&#x0;&#x0;&#x0;&#x0;&#x0;</Query>
+        <DataEntryApplication />
+        <AppDependent AppType='DISAPP' />
+      </WebFgQuery>
+    </DataBinding>
+  </DataMap>
+  <GridProperties xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+    <BackColor>Window</BackColor>
+    <GridTextAlign>MiddleCenter</GridTextAlign>
+    <ChangedCellColor>Pink</ChangedCellColor>
+    <GridTitleForeColor>Black</GridTitleForeColor>
+    <GridTitleBackColor>ControlLight</GridTitleBackColor>
+    <ForeColor>ControlText</ForeColor>
+    <TitleBarHeight>20</TitleBarHeight>
+  </GridProperties>
+  <GridSchema><GridEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><MaxNestedFieldRecurseLevel>3</MaxNestedFieldRecurseLevel><MaxNestedCollectionRecurseLevel>5</MaxNestedCollectionRecurseLevel><TableDescriptor><Name>TPNT</Name><GroupedColumns /><SortedColumns /><AllowNew>false</AllowNew><AllowRemove>false</AllowRemove><AllowEdit>false</AllowEdit><VisibleColumns><GridVisibleColumnDescriptor><Name>TIME</Name></GridVisibleColumnDescriptor></VisibleColumns><Columns><GridColumnDescriptor><Width>65</Width><MappingName>__</MappingName></GridColumnDescriptor><GridColumnDescriptor><Width>129</Width><MappingName>TIME</MappingName><Appearance><AnyRecordFieldCell><Font><Underline>true</Underline></Font></AnyRecordFieldCell></Appearance></GridColumnDescriptor></Columns><Appearance><AnyRecordFieldCell /><FilterBarCell><CellType>"CustomFilterBarCell"</CellType></FilterBarCell></Appearance></TableDescriptor></GridEngine></GridSchema>
+<Charts>
+</Charts>
+<Layout xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'><Type xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Grid</Type><SplitterHeight xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>100</SplitterHeight><SplitterWidth xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>200</SplitterWidth><GridDocking xmlns='http://www.esca.com/GridDisplayDefinition.xsd'>Fill</GridDocking></Layout><UserData><XmlSerializableStringDictionary xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'><Entries><XmlSerializableDictionaryEntry><Key>TPNT.TIME</Key><Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;UserData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;LinkCommandString&gt;http://localhost?displays=.\smtnet&amp;amp;display=smtnet_tp_un_param_ems.grid&amp;amp;@Parent_Index={0}&lt;/LinkCommandString&gt;
+  &lt;LinkAction&gt;OpenGridDisplay&lt;/LinkAction&gt;
+  &lt;PaneDock&gt;Right&lt;/PaneDock&gt;
+  &lt;UsePane&gt;true&lt;/UsePane&gt;
+  &lt;ColName&gt;__&lt;/ColName&gt;
+  &lt;PaneAction&gt;Add&lt;/PaneAction&gt;
+&lt;/UserData&gt;</Value></XmlSerializableDictionaryEntry></Entries></XmlSerializableStringDictionary></UserData><WebfgMenus><DisplayMenus xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xsi:nil='true' /></WebfgMenus><ColumnCellFormats /></GridDisplayDefinition>

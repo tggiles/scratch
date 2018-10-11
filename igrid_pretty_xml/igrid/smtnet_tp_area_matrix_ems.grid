@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<GridDisplayDefinition>
+  <GridName></GridName>
+  <RootTableName>smtnet_tp_area_matrix</RootTableName>
+  <DataMap xmlns="http://www.areva.com/DataBindingMap2.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DataBinding>
+      <WebFgQuery>
+        <Name>smtnet_tp_area_matrix</Name>
+        <ReadWrite>ReadWrite</ReadWrite>
+        <GroupingEnabled>false</GroupingEnabled>
+        <Query>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+          &lt;qns:repeatQuery guid="bec5267a-7478-4484-a445-5520c239506e" refresh="2" drivingRec="app[@name=\'SMTNET\']/db[@name=\'SMTNET\']/rec[@name=\'MTAREA\']" xmlns:qns="uuid:14F5F723-831B-46c8-AF5F-0E0D69315B6F"&gt;
+            &lt;app name="SMTNET"&gt;
+              &lt;db name="SMTNET"&gt;
+                &lt;rec name="MTAREA"&gt;
+                  &lt;fld name="AWR"                    /&gt;
+                  &lt;fld name="COMP"                   /&gt;
+                  &lt;fld name="I__TPNT"                /&gt;
+                  &lt;fld name="ID"                     /&gt;
+                  &lt;fld name="LFVAL"                  /&gt;
+                  &lt;fld name="Q"                      /&gt;
+                  &lt;fld name="RTWTR"                  /&gt;
+                  &lt;fld name="TOTGEN"                 /&gt;
+                  &lt;fld name="I__TPNT" dateFmt="Full"  &gt;
+                    &lt;indFld name="TIME"              /&gt;
+                    &lt;/fld                             &gt;
+                &lt;/rec&gt;
+              &lt;/db&gt;
+            &lt;/app&gt;
+            &lt;recGroup name="MTAREA"&gt;
+              &lt;recGroupPart rec="app[@name=\'SMTNET\']/db[@name=\'SMTNET\']/rec[@name=\'MTAREA\']" /&gt;
+            &lt;/recGroup&gt;
+          &lt;/qns:repeatQuery&gt;
+          &lt;!-- family=EMS -->
+        </Query>
+        <DataEntryApplication></DataEntryApplication>
+        <AppDependent AppType="DISAPP"></AppDependent>
+      </WebFgQuery>
+    </DataBinding>
+  </DataMap>
+  <GridProperties xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <BackColor>Window</BackColor>
+    <GridTextAlign>MiddleCenter</GridTextAlign>
+    <ChangedCellColor>Pink</ChangedCellColor>
+    <GridTitleForeColor>Black</GridTitleForeColor>
+    <GridTitleBackColor>ControlLight</GridTitleBackColor>
+    <ForeColor>ControlText</ForeColor>
+    <TitleBarHeight>20</TitleBarHeight>
+    <ShowGroupDropArea>true</ShowGroupDropArea>
+    <ShowNavigationBar>true</ShowNavigationBar>
+  </GridProperties>
+  <GridSchema>
+    <GridEngine xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <MaxNestedFieldRecurseLevel>3</MaxNestedFieldRecurseLevel>
+      <MaxNestedCollectionRecurseLevel>5</MaxNestedCollectionRecurseLevel>
+      <TableDescriptor>
+        <Name>MTAREA</Name>
+        <GroupedColumns>
+          <SortColumnDescriptor>
+            <Name>I__TPNT>TIME</Name>
+            <SortDirection>Ascending</SortDirection>
+          </SortColumnDescriptor>
+        </GroupedColumns>
+        <SortedColumns></SortedColumns>
+        <AllowNew>false</AllowNew>
+        <AllowRemove>false</AllowRemove>
+        <VisibleColumns>
+          <GridVisibleColumnDescriptor>
+            <Name>ID</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>AWR</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>RTWTR</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>COMP</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>LFVAL</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>TOTGEN</Name>
+          </GridVisibleColumnDescriptor>
+          <GridVisibleColumnDescriptor>
+            <Name>I__TPNT>TIME</Name>
+          </GridVisibleColumnDescriptor>
+        </VisibleColumns>
+        <Columns>
+          <GridColumnDescriptor>
+            <Width>60</Width>
+            <MappingName>AWR</MappingName>
+            <AllowDropDownCell>false</AllowDropDownCell>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Estimated Compensation</HeaderText>
+            <Width>90</Width>
+            <MappingName>COMP</MappingName>
+            <Appearance>
+              <AnyRecordFieldCell>
+                <Format>"f2"</Format>
+              </AnyRecordFieldCell>
+            </Appearance>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <MappingName>I__TPNT</MappingName>
+            <ReadOnly>true</ReadOnly>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Area</HeaderText>
+            <Width>75</Width>
+            <MappingName>ID</MappingName>
+            <ReadOnly>true</ReadOnly>
+            <AllowFilter>true</AllowFilter>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Area LF</HeaderText>
+            <Width>84</Width>
+            <MappingName>LFVAL</MappingName>
+            <ReadOnly>true</ReadOnly>
+            <Appearance>
+              <AnyRecordFieldCell>
+                <Format>"f2"</Format>
+              </AnyRecordFieldCell>
+            </Appearance>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <MappingName>Q</MappingName>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Transaction Schedule</HeaderText>
+            <Width>90</Width>
+            <MappingName>RTWTR</MappingName>
+            <Appearance>
+              <AnyRecordFieldCell>
+                <Format>"f2"</Format>
+              </AnyRecordFieldCell>
+            </Appearance>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Total Gen</HeaderText>
+            <Width>86</Width>
+            <MappingName>TOTGEN</MappingName>
+            <ReadOnly>true</ReadOnly>
+            <Appearance>
+              <AnyRecordFieldCell>
+                <Format>"f2"</Format>
+              </AnyRecordFieldCell>
+            </Appearance>
+          </GridColumnDescriptor>
+          <GridColumnDescriptor>
+            <HeaderText>Timepoint</HeaderText>
+            <Width>129</Width>
+            <MappingName>I__TPNT>TIME</MappingName>
+            <ReadOnly>true</ReadOnly>
+            <Appearance>
+              <AnyRecordFieldCell>
+                <CellType>"Static"</CellType>
+              </AnyRecordFieldCell>
+            </Appearance>
+          </GridColumnDescriptor>
+        </Columns>
+        <Appearance>
+          <AnyRecordFieldCell></AnyRecordFieldCell>
+          <FilterBarCell>
+            <CellType>"CustomFilterBarCell"</CellType>
+          </FilterBarCell>
+        </Appearance>
+        <TopLevelGroupOptions>
+          <ShowFilterBar>true</ShowFilterBar>
+        </TopLevelGroupOptions>
+        <TableOptions>
+          <ColumnHeaderRowHeight>32</ColumnHeaderRowHeight>
+        </TableOptions>
+      </TableDescriptor>
+    </GridEngine>
+  </GridSchema>
+  <Charts></Charts>
+  <Layout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Type xmlns="http://www.esca.com/GridDisplayDefinition.xsd">Grid</Type>
+    <SplitterHeight xmlns="http://www.esca.com/GridDisplayDefinition.xsd">100</SplitterHeight>
+    <SplitterWidth xmlns="http://www.esca.com/GridDisplayDefinition.xsd">200</SplitterWidth>
+    <GridDocking xmlns="http://www.esca.com/GridDisplayDefinition.xsd">Fill</GridDocking>
+  </Layout>
+  <UserData>
+    <XmlSerializableStringDictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Entries></Entries>
+    </XmlSerializableStringDictionary>
+  </UserData>
+  <WebfgMenus>
+    <DisplayMenus xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"></DisplayMenus>
+  </WebfgMenus>
+  <ColumnCellFormats></ColumnCellFormats>
+</GridDisplayDefinition>
